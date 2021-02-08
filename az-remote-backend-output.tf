@@ -7,6 +7,3 @@ output "terraform_state_storage_account" {
 output "terraform_state_storage_container_core" {
   value = azurerm_storage_container.core-container.name
 }
-output "terraform_state_storage_account_key" {
-  value = azurerm_storage_account.state-sta.k
-}
