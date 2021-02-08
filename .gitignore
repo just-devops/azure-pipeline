@@ -1,0 +1,13 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+.idea
+.terraform
+
+*.iml
+*.hcl
+
+/main/current-tf-plan.dot
+
+crash.log
