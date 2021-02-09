@@ -4,19 +4,16 @@ This is the list of prerequisites required to create a DevOps pipeline:
 
 1. Create the backend for azure.  
     
-    resource: https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage
+    resource:  
     
     We do this using terraform. The tf code to provision the backend is in the `az-remote-backend-*` files.
     When you `terraform aply` for the first time the backend will be provisioned for you in azure.
     Also you will see the outputs, something like:
     ```
-    Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
+    storage_account_name: tstate8694
+    container_name: tstate
+    access_key: ****
     
-    Outputs:
-    
-    terraform_state_resource_group_name = "christos-tfstate-rg"
-    terraform_state_storage_account = "christostfu4ld85vo"
-    terraform_state_storage_container_core = "core-tfstate"
     ``` 
     
 2. Creating a Service Principal and a Client Secret
