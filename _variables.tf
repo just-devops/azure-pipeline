@@ -17,12 +17,12 @@ variable "environment" {
 variable "location" {
   type        = string
   description = "Azure region where resources will be created"
-  default     = "north europe"
+  default     = "germanywestcentral"
 }
 
 variable "tier" {
   type        = string
-  description = "SKU is short for 'Stock-keeping-Unit'. It basically stands for an item which is on sale, in lamen language."
+  description = "Pricing tier"
   default     = "Standard"
 }
 
